@@ -1,4 +1,4 @@
-import smbus
+import smbus2
 import time
 import Adafruit_DHT
 from datetime import datetime
@@ -11,7 +11,7 @@ DHT_PIN = 4
 humidity, temperature_dht = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
 
 # LPS331AP readout
-bus = smbus.SMBus(1)  # run smbus
+bus = smbus2.SMBus(1)  # run smbus
 
 bus.write_byte_data(0x5d, 0x20, 0b10000000)  # run sensor
 bus.write_byte_data(0x5d, 0x21, 0b1)
