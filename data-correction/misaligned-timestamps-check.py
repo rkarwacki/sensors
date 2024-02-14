@@ -1,3 +1,9 @@
+# this script checks the data for potential chronology issues
+# for some reason, the device writes data with a timestamp from the near future
+# but also, daylight savings time causes issues
+
+# -r will try to remove the problematic lines, it does not work perfectly, but gets rid of most of the issues
+
 import sys
 from datetime import datetime
 
@@ -13,16 +19,34 @@ def detect_timestamp_order_issues(data):
         current_timestamp = datetime.strptime(current_line[0], date_format)
         next_timestamp = datetime.strptime(next_line[0], date_format)
 
-        if current_timestamp > next_timestamp:
-            issues.append(f"Timestamp order issue: {current_line[0]} > {next_line[0]}")
+        if current_timestamp >= next_timestamp:
+            issues.append(f"Timestamp order issue: {current_line[0]} >= {next_line[0]}")
 
     return issues
 
-if len(sys.argv) != 2:
-    print("Usage: python script.py data.csv")
+def remove_timestamp_order_issues(data):
+    date_format = "%d/%m/%Y %H:%M"
+
+    new_data = [data[0]]  # Keep the header
+
+    for i in range(1, len(data)):
+        current_line = data[i].strip().split('|')
+        prev_line = data[i - 1].strip().split('|')
+
+        current_timestamp = datetime.strptime(current_line[0], date_format)
+        prev_timestamp = datetime.strptime(prev_line[0], date_format)
+
+        if current_timestamp > prev_timestamp:
+            new_data.append(data[i])
+
+    return new_data
+
+if len(sys.argv) not in [2, 3]:
+    print("Usage: python script.py data.csv [-r]")
     sys.exit(1)
 
 data_file_path = sys.argv[1]
+remove_issues = "-r" in sys.argv
 
 try:
     with open(data_file_path, 'r') as file:
@@ -34,6 +58,15 @@ try:
         print("Timestamp order issues found:")
         for issue in order_issues:
             print(issue)
+
+        if remove_issues:
+            print("Removing problematic lines...")
+            your_data = remove_timestamp_order_issues(your_data)
+
+            with open(data_file_path, 'w') as file:
+                file.writelines(your_data)
+
+            print("Removed problematic lines.")
     else:
         print("No timestamp order issues found.")
 except FileNotFoundError:

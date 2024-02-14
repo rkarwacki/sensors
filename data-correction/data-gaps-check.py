@@ -1,5 +1,5 @@
 # when the device is off (e.g. power out) data is not collected
-# this script detects where the data is missing
+# this script detects places where the data is missing
 
 import sys
 from datetime import datetime, timedelta
@@ -8,7 +8,7 @@ def detect_missing_entries(data):
     date_format = "%d/%m/%Y %H:%M"
 
     missing_entries = []
-    log_frequency = 1
+    log_frequency = 10000
 
     for i in range(len(data) - 1):
         current_line = data[i].strip().split('|')
