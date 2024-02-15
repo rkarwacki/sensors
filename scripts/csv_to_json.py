@@ -24,7 +24,7 @@ def average_temperatures(data):
     return averaged_data
 
 if len(sys.argv) != 3:
-    print("Usage: python script.py input_data.csv output_data.json")
+    print("Usage: python script.py input_data.csv output_data.js")
     sys.exit(1)
 
 input_file_path = sys.argv[1]
@@ -36,8 +36,9 @@ try:
 
     averaged_data = average_temperatures(your_data)
 
-    with open(output_file_path, 'w') as json_file:
-        json.dump(averaged_data, json_file, indent=2)
+    with open(output_file_path, 'w') as js_file:
+        js_file.write("let data = ")
+        json.dump(averaged_data, js_file, indent=2)
 
     print(f"Averaged data saved to {output_file_path}")
 except FileNotFoundError:
