@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="data/data_12h.js"></script>
     <meta charset="UTF-8">
     <title>Sensor data</title>
 </head>
 <body>
-<h1>Last 12 hours:</h1>
+<h1>Last readout:</h1>
+<h3>Date: <span class="date"></span></h3>
+<h3>Temperature: <span class="temperature"> </span>°C</h3>
+<h3>Humidity: <span class="humidity"></span>%</h3>
+<h2>Last 12 hours:</h2>
 <div class="chart">
     <canvas id="temperature"></canvas>
 </div>
-<script src="data/data_12h.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/chart.js"></script>
+<script src="js/basic.js"></script>
 </body>
 </html>
