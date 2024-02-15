@@ -7,14 +7,14 @@ def average_temperatures(data):
 
     for line in data:
         line_data = line.strip().split('|')
-        timestamp = datetime.strptime(line_data[0], "%d/%m/%Y %H:%M")
+        timestamp = datetime.strptime(line_data[0], "%d/%m/%Y %H:%M:%S")
 
         temp1 = float(line_data[1])
         temp2 = float(line_data[2])
         averaged_temp = round((temp1 + temp2) / 2, 1)
 
         entry = {
-            'timestamp': timestamp.strftime('%Y-%m-%d %H:%M'),
+            'timestamp': timestamp.strftime('%Y-%m-%d %H:%M:%S'),
             'averaged_temp': averaged_temp,
             'humidity': float(line_data[3]),
         }
