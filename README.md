@@ -1,5 +1,6 @@
 # Raspberry Pi + DHT22 + LPS331AP
 Simple station for monitoring basic weather conditions
+Live demo - https://rkarwacki.github.io/sensors/
 
 ### Data collection
 `data-collection/read-sensors.py` is the main script that reads the output from the sensors. 
