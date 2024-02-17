@@ -29,7 +29,7 @@ if len(sys.argv) != 3:
 
 input_file_path = sys.argv[1]
 output_file_path = sys.argv[2] + '.js'
-variable_name = sys.argv[2]
+variable_name = sys.argv[2].split("/", 2)[2]
 
 try:
     with open(input_file_path, 'r') as file:
