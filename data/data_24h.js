@@ -1,29 +1,4 @@
-let data = [
-  {
-    "timestamp": "2024-02-16 12:53:02",
-    "averaged_temp": 22.6,
-    "humidity": 43.3
-  },
-  {
-    "timestamp": "2024-02-16 12:55:02",
-    "averaged_temp": 22.6,
-    "humidity": 43.3
-  },
-  {
-    "timestamp": "2024-02-16 12:57:02",
-    "averaged_temp": 22.6,
-    "humidity": 43.1
-  },
-  {
-    "timestamp": "2024-02-16 12:59:02",
-    "averaged_temp": 22.6,
-    "humidity": 43.2
-  },
-  {
-    "timestamp": "2024-02-16 13:01:02",
-    "averaged_temp": 22.6,
-    "humidity": 43.1
-  },
+let data_24h = [
   {
     "timestamp": "2024-02-16 13:03:01",
     "averaged_temp": 22.7,
@@ -3596,6 +3571,31 @@ let data = [
   },
   {
     "timestamp": "2024-02-17 12:51:02",
+    "averaged_temp": 25.1,
+    "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 12:53:02",
+    "averaged_temp": 25.1,
+    "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 12:55:01",
+    "averaged_temp": 25.1,
+    "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 12:57:01",
+    "averaged_temp": 25.1,
+    "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 12:59:01",
+    "averaged_temp": 25.0,
+    "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 13:01:02",
     "averaged_temp": 25.1,
     "humidity": 40.1
   }
