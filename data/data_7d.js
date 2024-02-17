@@ -1,45 +1,5 @@
 let data_7d = [
   {
-    "timestamp": "2024-02-06 13:46:02",
-    "averaged_temp": 22.5,
-    "humidity": 41.1
-  },
-  {
-    "timestamp": "2024-02-06 14:01:01",
-    "averaged_temp": 22.6,
-    "humidity": 41.0
-  },
-  {
-    "timestamp": "2024-02-06 14:16:02",
-    "averaged_temp": 22.6,
-    "humidity": 41.0
-  },
-  {
-    "timestamp": "2024-02-06 14:31:02",
-    "averaged_temp": 22.7,
-    "humidity": 40.9
-  },
-  {
-    "timestamp": "2024-02-06 14:46:02",
-    "averaged_temp": 22.9,
-    "humidity": 43.5
-  },
-  {
-    "timestamp": "2024-02-06 15:01:02",
-    "averaged_temp": 22.9,
-    "humidity": 45.2
-  },
-  {
-    "timestamp": "2024-02-06 15:16:02",
-    "averaged_temp": 22.9,
-    "humidity": 45.5
-  },
-  {
-    "timestamp": "2024-02-06 15:31:02",
-    "averaged_temp": 23.8,
-    "humidity": 44.9
-  },
-  {
     "timestamp": "2024-02-06 15:46:01",
     "averaged_temp": 25.2,
     "humidity": 42.0
@@ -3358,5 +3318,45 @@ let data_7d = [
     "timestamp": "2024-02-17 12:53:02",
     "averaged_temp": 25.1,
     "humidity": 40.1
+  },
+  {
+    "timestamp": "2024-02-17 13:08:02",
+    "averaged_temp": 25.1,
+    "humidity": 39.9
+  },
+  {
+    "timestamp": "2024-02-17 13:23:02",
+    "averaged_temp": 25.5,
+    "humidity": 39.3
+  },
+  {
+    "timestamp": "2024-02-17 13:38:02",
+    "averaged_temp": 25.6,
+    "humidity": 39.0
+  },
+  {
+    "timestamp": "2024-02-17 13:53:01",
+    "averaged_temp": 25.6,
+    "humidity": 38.9
+  },
+  {
+    "timestamp": "2024-02-17 14:08:01",
+    "averaged_temp": 25.6,
+    "humidity": 38.7
+  },
+  {
+    "timestamp": "2024-02-17 14:23:02",
+    "averaged_temp": 25.6,
+    "humidity": 38.7
+  },
+  {
+    "timestamp": "2024-02-17 14:38:01",
+    "averaged_temp": 25.7,
+    "humidity": 38.4
+  },
+  {
+    "timestamp": "2024-02-17 14:53:01",
+    "averaged_temp": 25.8,
+    "humidity": 38.3
   }
 ]
