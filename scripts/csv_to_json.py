@@ -23,7 +23,7 @@ def average_temperatures(data):
 
     return averaged_data
 
-if len(sys.argv) != 4:
+if len(sys.argv) != 3:
     print("Usage: python script.py input_data.csv output_data")
     sys.exit(1)
 
