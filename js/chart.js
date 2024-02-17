@@ -17,12 +17,12 @@ const temperatureHumidityData = {
   labels: chartLabels   ,
   datasets: [
     {
-      label: 'Temperature',
+      label: 'Temperatura [°C]',
       data: temperature,
       yAxisID: 'y',
     },
     {
-      label: 'Humidity',
+      label: 'Wilgotność powietrza [%]',
       data: humidity,
       yAxisID: 'y1',
     }
@@ -42,33 +42,35 @@ const temperatureChartConfig = {
     plugins: {
       title: {
         display: true,
-        text: 'Chart.js Line Chart - Multi Axis'
+        text: 'Warunki w pokoju'
       }
     },
     scales: {
       y: {
         type: 'linear',
         display: true,
+        text: 'Temperatura [°C]',
         position: 'left',
+        grace: '25%',
+        border: {
+            color: 'blue'
+         }
       },
       y1: {
         type: 'linear',
         display: true,
+        text: 'Wilgotność powietrza [%]',
         position: 'right',
-
+        grace: '25%',
         // grid line settings
         grid: {
           drawOnChartArea: false, // only want the grid lines for one axis to show up
         },
+        border: {
+            color: 'red'
+         }
       },
     },
-    plugins: {
-        decimation: {
-            enabled: true,
-            algorithm: 'lttb',
-            samples: 50
-        }
-    }
   },
 }
 
