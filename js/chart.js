@@ -1,5 +1,7 @@
 const temperatureChart = document.getElementById('temperature');
 
+var data = data_12h
+
 var chartLabels = data.map(function(e) {
    return e.timestamp;
 });
