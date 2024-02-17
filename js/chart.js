@@ -44,6 +44,7 @@ function initDatasets() {
       data: temperatureHumidityData,
       options: {
         responsive: true,
+        maintainAspectRatio: true,
         interaction: {
           mode: 'index',
           intersect: false,
