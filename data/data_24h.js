@@ -1,80 +1,5 @@
 let data_24h = [
   {
-    "timestamp": "2024-05-31 00:33:01",
-    "averaged_temp": 24.5,
-    "humidity": 44.2
-  },
-  {
-    "timestamp": "2024-05-31 00:35:01",
-    "averaged_temp": 24.5,
-    "humidity": 44.1
-  },
-  {
-    "timestamp": "2024-05-31 00:37:01",
-    "averaged_temp": 24.5,
-    "humidity": 44.0
-  },
-  {
-    "timestamp": "2024-05-31 00:39:02",
-    "averaged_temp": 24.4,
-    "humidity": 43.9
-  },
-  {
-    "timestamp": "2024-05-31 00:41:01",
-    "averaged_temp": 24.4,
-    "humidity": 43.8
-  },
-  {
-    "timestamp": "2024-05-31 00:43:02",
-    "averaged_temp": 24.2,
-    "humidity": 43.7
-  },
-  {
-    "timestamp": "2024-05-31 00:45:02",
-    "averaged_temp": 24.2,
-    "humidity": 43.9
-  },
-  {
-    "timestamp": "2024-05-31 00:47:01",
-    "averaged_temp": 24.2,
-    "humidity": 43.9
-  },
-  {
-    "timestamp": "2024-05-31 00:49:02",
-    "averaged_temp": 24.3,
-    "humidity": 43.9
-  },
-  {
-    "timestamp": "2024-05-31 00:51:02",
-    "averaged_temp": 24.2,
-    "humidity": 43.8
-  },
-  {
-    "timestamp": "2024-05-31 00:53:02",
-    "averaged_temp": 24.3,
-    "humidity": 43.9
-  },
-  {
-    "timestamp": "2024-05-31 00:55:02",
-    "averaged_temp": 24.2,
-    "humidity": 43.8
-  },
-  {
-    "timestamp": "2024-05-31 00:57:01",
-    "averaged_temp": 24.2,
-    "humidity": 44.0
-  },
-  {
-    "timestamp": "2024-05-31 00:59:02",
-    "averaged_temp": 24.2,
-    "humidity": 43.8
-  },
-  {
-    "timestamp": "2024-05-31 01:01:01",
-    "averaged_temp": 24.2,
-    "humidity": 43.9
-  },
-  {
     "timestamp": "2024-05-31 01:03:01",
     "averaged_temp": 24.2,
     "humidity": 44.0
@@ -3598,5 +3523,80 @@ let data_24h = [
     "timestamp": "2024-06-01 00:31:02",
     "averaged_temp": 23.8,
     "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:33:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:35:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:37:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:39:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:41:01",
+    "averaged_temp": 23.8,
+    "humidity": 49.1
+  },
+  {
+    "timestamp": "2024-06-01 00:43:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.0
+  },
+  {
+    "timestamp": "2024-06-01 00:45:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.0
+  },
+  {
+    "timestamp": "2024-06-01 00:47:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.0
+  },
+  {
+    "timestamp": "2024-06-01 00:49:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.0
+  },
+  {
+    "timestamp": "2024-06-01 00:51:02",
+    "averaged_temp": 23.8,
+    "humidity": 48.9
+  },
+  {
+    "timestamp": "2024-06-01 00:53:01",
+    "averaged_temp": 23.8,
+    "humidity": 48.9
+  },
+  {
+    "timestamp": "2024-06-01 00:55:02",
+    "averaged_temp": 23.8,
+    "humidity": 48.9
+  },
+  {
+    "timestamp": "2024-06-01 00:57:02",
+    "averaged_temp": 23.8,
+    "humidity": 49.0
+  },
+  {
+    "timestamp": "2024-06-01 00:59:02",
+    "averaged_temp": 23.8,
+    "humidity": 48.9
+  },
+  {
+    "timestamp": "2024-06-01 01:01:02",
+    "averaged_temp": 23.8,
+    "humidity": 48.8
   }
 ]
