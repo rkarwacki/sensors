@@ -1,15 +1,5 @@
 let data_7d = [
   {
-    "timestamp": "2024-08-03 13:32:02",
-    "averaged_temp": 25.5,
-    "humidity": 44.3
-  },
-  {
-    "timestamp": "2024-08-03 13:47:02",
-    "averaged_temp": 25.3,
-    "humidity": 44.5
-  },
-  {
     "timestamp": "2024-08-03 14:02:02",
     "averaged_temp": 25.2,
     "humidity": 44.6
@@ -3358,5 +3348,15 @@ let data_7d = [
     "timestamp": "2024-08-10 13:17:01",
     "averaged_temp": 25.5,
     "humidity": 45.1
+  },
+  {
+    "timestamp": "2024-08-10 13:32:02",
+    "averaged_temp": 25.5,
+    "humidity": 45.0
+  },
+  {
+    "timestamp": "2024-08-10 13:47:02",
+    "averaged_temp": 25.5,
+    "humidity": 45.0
   }
 ]
